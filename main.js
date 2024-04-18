@@ -22,7 +22,7 @@ footer_icon_top.addEventListener("click", () => {
 });
 /* ------------------ */
 const apiKey = "16e320c3";
-const baseUrl = "http://www.omdbapi.com/?";
+const baseUrl = "https://www.omdbapi.com/?";
 /* ------------------ */
 async function getMovies(url) {
   try {
