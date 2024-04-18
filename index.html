@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppPeliculasOscar</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="header-menu">
+          <a href="./index.html" class="title">Peliculas/Oscar</a>
+          <nav class="links">
+            <div class="links-web">
+              <ul>
+                <li class="link"><a href="./index.html">Inicio</a></li>
+                <li class="link">
+                  <a href="#" id="movie" onclick="optionHeader(id)"
+                    >Peliculas</a
+                  >
+                </li>
+                <li class="link">
+                  <a href="#" id="series" onclick="optionHeader(id)">Series</a>
+                </li>
+                <li class="link menuDown">
+                  <a href="#" class="icon-genero">Genero</a>
+                  <span class="icon-span"
+                    ><img
+                      width="20"
+                      height="25"
+                      src="./icons/icon.png"
+                      alt="down--v1"
+                    />
+                  </span>
+                  <ul class="menu-vertical" id="menu-vertical">
+                    <li id="option-user" onclick="optionFromUser(this)">
+                      <a href="#">Terror</a>
+                    </li>
+                    <li id="option-user" onclick="optionFromUser(this)">
+                      <a href="#">Anime</a>
+                    </li>
+                    <li id="option-user" onclick="optionFromUser(this)">
+                      <a href="#">Drama</a>
+                    </li>
+                    <li id="option-user" onclick="optionFromUser(this)">
+                      <a href="#">Suspenso</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="links-responsive hidden">
+              <h3 class="subtitle">Peliculas/Oscar</h3>
+              <figure class="logo">
+                <img
+                  src="https://i0.wp.com/themoviedb.org/t/p/w185/ncKCQVXgk4BcQV6XbvesgZ2zLvZ.jpg"
+                  alt="logo"
+                />
+              </figure>
+              <ul>
+                <li class="link"><a href="./index.html">Inicio</a></li>
+                <li class="link">
+                  <a href="#" id="movie" onclick="optionHeader(id)"
+                    >Peliculas</a
+                  >
+                </li>
+                <li class="link">
+                  <a href="#" id="series" onclick="optionHeader(id)">Series</a>
+                </li>
+
+                <li class="link links-responsive-menu-down">
+                  <a href="#" class="icon-genero" id="icon-span-right"
+                    >Genero</a
+                  >
+                  <span class="icon-span-right"
+                    ><img
+                      width="15"
+                      height="15"
+                      src="./icons/icon-right.png"
+                      alt="down--v1"
+                    />
+                  </span>
+                  <div class="menu-reponsive hidden">
+                    <ul class="menu-responsive-vertical">
+                      <li id="option-user" onclick="optionFromUser(this)">
+                        <a href="#">Terror</a>
+                      </li>
+                      <li id="option-user" onclick="optionFromUser(this)">
+                        <a href="#">Anime</a>
+                      </li>
+                      <li id="option-user" onclick="optionFromUser(this)">
+                        <a href="#">Drama</a>
+                      </li>
+                      <li id="option-user" onclick="optionFromUser(this)">
+                        <a href="#">Suspenso</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <h3 class="links-responsive-footer">
+                Peliculas/Oscar
+                <span>2023</span>
+              </h3>
+            </div>
+            <div class="menu-icon">
+              <div class="menu-icon-bar"></div>
+              <div class="menu-icon-bar"></div>
+              <div class="menu-icon-bar"></div>
+            </div>
+          </nav>
+        </div>
+        <div class="header-search">
+          <input
+            type="text"
+            placeholder="Avenger, naruto, pokemon, DC......."
+            autocomplete="off"
+            id="search-input"
+            class="search-input"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="movies">
+        <h1 class="title-movies">Peliculas</h1>
+        <div class="movies-container" id="movies-container"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-menu">
+          <ul>
+            <li class="link"><a href="./index.html">Inicio</a></li>
+            <li class="link">
+              <a href="#" id="movie" onclick="optionHeader(id)">Peliculas</a>
+            </li>
+            <li class="link">
+              <a href="#" id="series" onclick="optionHeader(id)">Series</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-information">
+          <p class="footer-parraf">Aplicación de Peliculas</p>
+          <p class="footer-parraf">@2023</p>
+          <p class="footer-parraf">Oscar Ossiel Aguilar Baez</p>
+        </div>
+        <div class="footer-top">
+          <span class="material-symbols-outlined" id="footer-icon-top">
+            arrow_upward
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
